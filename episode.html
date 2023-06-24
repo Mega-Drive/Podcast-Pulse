@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+<title>Episode</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="Podcast Pulse Project">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="stylesheet" type="text/css" href="styles/bootstrap-5.1.3/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.3.4/owl.carousel.css">
+<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.3.4/owl.theme.default.css">
+<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.3.4/animate.css">
+<link rel="stylesheet" type="text/css" href="plugins/swiper/swiper-bundle.min.css">
+<link rel="stylesheet" type="text/css" href="styles/episode.css">
+<link rel="stylesheet" type="text/css" href="styles/episode_responsive.css">
+</head>
+<body>
+
+<div class="super_container">
+
+    <!-- MENU -->
+
+    <div class="menu">
+        <div class="close_container">
+            <div class="d-flex flex-column align-items-center justify-content-center">
+                <div class="close d-flex flex-column align-items-center justify-content-center"><img src="images/close.png" alt="Close (x) pic - photoshop"></div>
+            </div>
+        </div>
+        <div class="menu_inner">
+            <!-- Navigation -->
+            <div class="menu_nav_container">
+                <div class="menu_title">navigation</div>
+                <nav class="menu_nav">
+                    <ul class="nav_content d-flex flex-row align-items-center justify-content-start">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="episodes.html">Episodes</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- Recent -->
+            <div class="menu_recent_container">
+                <div class="menu_title">latest episodes</div>
+                <div class="menu_recent_items">
+                    <!-- Episode -->
+                    <article class="menu_recent">
+                        <a href="episodes.html"></a>
+                        <div class="d-flex flex-row align-items-center">
+                            <div class="menu_recent_pic"><img src="images/episode_01.jpg" alt="AI Generated Image"></div>
+                            <div class="menu_recent_title"><h3>The Future of Tech</h3></div>
+                        </div>
+                    </article>
+                    <!-- Episode -->
+                    <article class="menu_recent">
+                        <a href="episodes.html"></a>
+                        <div class="d-flex flex-row align-items-center">
+                            <div class="menu_recent_pic"><img src="images/episode_02.jpg" alt="AI Generated Image"></div>
+                            <div class="menu_recent_title"><h3>Video Game Design</h3></div>
+                        </div>
+                    </article>
+                    <!-- Episode -->
+                    <article class="menu_recent">
+                        <a href="episodes.html"></a>
+                        <div class="d-flex flex-row align-items-center">
+                            <div class="menu_recent_pic"><img src="images/episode_03.jpg" alt="AI Generated Image"></div>
+                            <div class="menu_recent_title"><h3>Art of Public Speaking</h3></div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div> 
+    </div>
+
+    <!-- HEADER -->
+
+    <header class="header">
+        <div class="header_outer d-flex flex-row align-items-center justify-content-start">
+
+            <!-- Logo -->
+            <div class="header_logo_container_outer">
+                <div class="header_logo_container d-flex flex-row align-items-center justify-content-center">
+                    <div class="logo d-flex flex-row align-items-center">
+                        <a href="#"></a>
+                        <img src="images/logo.png" alt="Podcast Pulse logo.">
+                        <div>Podcast Pulse.</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="header_inner">
+                <div class="header_content d-flex flex-row align-items-center justify-content-center">
+
+                    <!-- Nav -->
+                    <div class="nav_container d-flex flex-row align-items-center justify-content-start">
+                        <nav class="nav">
+                            <ul class="nav_content d-flex flex-row align-items-center justify-content-start">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="episodes.html">Episodes</a></li>
+                                <li><a href="blog.html">Blog</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+
+            <div class="header_right_side">
+                <div class="d-flex flex-row align-items-center justify-content-sm-start justify-content-end">
+                    <!-- Donation -->
+                    <div class="donate">
+                        <div class="d-flex flex-row align-items-center justify-content-center">
+                            <img src="images/donate.png" alt="donate icon">
+                            <span>donate</span>
+                        </div> 
+                    </div>
+                    <!-- Notifications -->
+                    <div class="notifs">
+                        <div class="d-flex flex-row align-items-center justify-content-center">
+                            <img src="images/notif_bell.png" alt="bell icon for notifications">
+                            <span>5</span>
+                        </div> 
+                    </div>
+                    <!-- Search -->
+                    <div class="header_search d-flex flex-column align-items-center justify-content-center">
+                        <div class="btn_container">
+                            <div>
+                                <div class="btn_base d-flex flex-column align-items-center justify-content-center">
+                                    <img id="search_icon_base" src="images/search.png" alt="search icon">
+                                </div>
+                                <div class="btn_extra d-flex flex-column align-items-center justify-content-center">
+                                    <img id="search_icon_extra" src="images/search.png" alt="search icon">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Hamburger Menu -->
+                    <div class="burger_container d-flex flex-column align-items-center justify-content-center">
+                        <div class="burger d-flex flex-column align-items-center justify-content-around">
+                            <div></div><div></div><div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+    <!-- SEARCH -->
+    <div class="search_group_container">
+        <div class="search_form_container">
+            <form action="#" class="search_form">
+                <div class="search_icon d-flex flex-column align-items-center justify-content-center"><img src="images/search_2.png" alt="Search icon"></div>
+                <input type="text" placeholder="Start typing to search" class="search_input">
+            </form>
+            <div class="searches_container">
+                <div class="searches_title">Popular Searches</div>
+                <div class="searches_list">
+                    <ul>
+                        <li><a href="#">Podcast</a></li>
+                        <li><a href="#">Latest Episode</a></li>
+                        <li><a href="#">Tech</a></li>
+                        <li><a href="#">AI</a></li>
+                        <li><a href="#">Health</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PLAYER -->
+    <div class="player_fixed_container">
+        <div class="player_minimize">
+            <div class="d-flex flex-column align-items-center justify-content-center">
+                <img src="images/chevron_down.png" alt="chevron-down icon">
+            </div>
+        </div>
+        <div class="d-flex flex-row align-items-center justify-content-center">
+            <div class="player_fixed_inner">
+                        
+                <!-- Player -->
+                <div class="single_player_container">
+                    <div class="single_player d-flex flex-row align-items-center justify-content-start">
+                        <div id="jplayer_1" class="jp-jplayer"></div>
+                        <div id="jp_container_1" class="jp-audio" role="application" aria-label="media player">
+                            <div class="jp-type-single">
+                                <div class="player_controls">
+                                    <div class="jp-gui jp-interface d-flex flex-row align-items-center justify-content-start">
+                                        <div class="file_info_container d-flex flex-row align-items-center">
+                                            <div class="jp-details">
+                                                <div class="jp-title"></div>
+                                            </div>
+                                        </div>
+                                        <div class="jp-controls-holder time_controls d-flex flex-row align-items-center justify-content-between">
+                                            <div>
+                                                <div class="jp-controls-holder play_button ml-auto">
+                                                    <button class="jp-play" tabindex="0">
+                                                        <svg version="1.1" id="global_player_pause" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                            viewBox="0 0 44 48" style="enable-background:new 0 0 44 48;" xml:space="preserve">
+                                                            <g><rect x="16" y="17" class="st0" width="4" height="16"/></g>
+                                                            <g><rect x="24" y="17" class="st0" width="4" height="16"/></g>
+                                                        </svg>
+                                                        <svg version="1.1" id="global_player_play" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                            viewBox="0 0 44 48" style="enable-background:new 0 0 44 48;" xml:space="preserve">
+                                                            <polygon class="st0" points="17,15 17,31 30,23 "/>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="time_controls_container d-flex flex-row align-items-center justify-content-center">
+                                                <div class="jp-current-time"></div>
+                                                <div class="jp-progress">
+                                                    <div class="jp-seek-bar">
+                                                        <div>
+                                                            <div class="jp-play-bar"><div></div></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="jp-duration"></div>
+                                            </div>
+                                        </div>
+                                        <div class="jp-volume-controls d-flex flex-row align-items-center justify-content-between ml-auto">
+                                            <div class="vol_controls">
+                                                <div class="jp-volume-bar">
+                                                    <div>
+                                                        <div class="jp-volume-bar-value"><div></div></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex flex-row align-items-center justify-content-start">
+                                                <button class="jp-mute" tabindex="0">
+                                                    <svg version="1.1" id="global_player_mute_off" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                        viewBox="0 0 44 48" style="enable-background:new 0 0 44 48;" xml:space="preserve">
+                                                        <polygon style="fill:#FFFFFF;" points="10,27 15,27 22,33 22,15 15,21 10,21 "/>
+                                                        <path style="fill:none;stroke:#FFFFFF;stroke-width:2;stroke-miterlimit:10;" d="M25,18c0.3,0.22,3,2.33,3,6c0,0.37-0.06,3.8-3,6"/>
+                                                        <path style="fill:none;stroke:#FFFFFF;stroke-width:2;stroke-miterlimit:10;" d="M29,16c0.3,0.3,3,3.1,3,8c0,0.5-0.06,5.06-3,8"/>
+                                                    </svg>
+                                                    <svg version="1.1" id="global_player_mute_on" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                        viewBox="0 0 44 48" style="enable-background:new 0 0 44 48;" xml:space="preserve">
+                                                        <polygon points="10,27 15,27 22,33 22,15 15,21 10,21 "/>
+                                                        <rect x="27" y="19" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -8.7696 26.8284)" class="st0" width="2" height="10"/>
+                                                        <rect x="27" y="19" transform="matrix(-0.7071 -0.7071 0.7071 -0.7071 30.8284 60.7696)" class="st0" width="2" height="10"/>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="jp-no-solution">
+                                    <span>Update Required</span>
+                                    To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- HOME -->
+	<div class="home d-flex flex-row align-items-center justify-content-center">
+        <div class="home_inner d-flex flex-row align-items-center justify-content-center">
+            <div class="logo_overlay">
+                <div>
+                    <div></div><div></div><div></div>
+                </div>
+            </div>
+            <div class="home_background">
+                <div class="background_image" style="background-image:url(images/hero_5.jpg)"></div>
+            </div>
+            <div class="home_container">
+                <div class="home_content">
+                    <div class="home_wave"><img src="images/waves.png" alt=""></div>
+                    <div class="breadcrumbs d-flex flex-row align-items-center">
+                        <div><a href="index.html">Home</a></div>
+                        <div><a href="episodes.html">Episodes</a></div>
+                        <div>The Future of Tech</div>
+                    </div>
+                    <h1>The Future of Tech: Predictions and Trends</h1>
+                    <div class="episode_info d-flex flex-row align-items-center justify-content-start">
+                        <div class="episode_info_date">06 June, 2023</div>
+                        <div class="episode_info_host">Hosted by: Alex Chen</div>
+                        <div class="episode_info_stars d-flex flex-row align-items-center justify-content-start">
+                            <img src="images/star.png" alt="">
+                            <img src="images/star.png" alt="">
+                            <img src="images/star.png" alt="">
+                            <img src="images/star.png" alt="">
+                            <img src="images/star.png" alt="">
+                        </div>
+                    </div>
+                    <div class="episode_buttons d-flex flex-row align-items-center flex-wrap">
+
+                        <!-- Play Button -->
+                        <div class="btn_container btn_fill play_btn" data-title="The Future of Tech" data-artist="Brian Smith" data-poster="images/episode_01.jpg" data-file="files/bensound-betterdays.mp3">
+                            <a class="d-flex flex-row align-items-center justify-content-center" href="#">
+                                <div class="btn_base">
+                                    <div><img src="images/play.png" alt=""><span>Play</span></div>
+                                </div>
+                                <div class="btn_extra">
+                                    <div><img src="images/play_white_2.png" alt=""><span>Play</span></div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- Sub Button -->
+                        <div class="btn_container btn_fill btn_sub">
+                            <a class="d-flex flex-row align-items-center justify-content-center" href="#">
+                                <div class="btn_base">
+                                    <div><img src="images/bell_sub.png" alt=""><span>Subscribe</span></div>
+                                </div>
+                                <div class="btn_extra">
+                                    <div><img src="images/bell_sub.png" alt=""><span>Subscribe</span></div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- Button More -->
+                        <div class="btn_container btn_fill btn_more">
+                            <a class="d-flex flex-row align-items-center justify-content-center" href="#">
+                                <div class="btn_base">
+                                    <div>...</div>
+                                </div>
+                                <div class="btn_extra">
+                                    <div>...</div>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="podcast_platforms">
+                    <div class="d-flex flex-row align-items-center">
+                        <div>Listen on</div>
+                        <div><a href="#"><img src="images/spotify.png" alt=""></a></div>
+                        <div><a href="#"><img src="images/apple.png" alt=""></a></div>
+                        <div><a href="#"><img src="images/google.png" alt=""></a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Episode Content -->
+
+    <div class="page_content">
+        <div class="container">
+            <div class="row">
+
+                <!-- Sidebar -->
+                <div class="col-lg-4 col-12 order-lg-1 order-2">
+                    <div class="sidebar">
+                        <div class="episode_pic"><img src="images/episode_02.jpg" alt="AI Generated Image"></div>
+                        <div class="episode_categories d-flex flex-row align-items-center justify-content-start flex-wrap">
+                            <div class="card_category"><a href="#">Technology</a></div>
+                        </div>
+                        <div class="sidebar_section about_host">
+                            <div class="sidebar_section_title"><h5>About host</h5></div>
+                            <p>Alex is a seasoned technology journalist with a passion for exploring the latest trends and breakthroughs in the tech industry.</p>
+                        </div>
+                        <div class="sidebar_section share_episode">
+                            <div class="sidebar_section_title"><h5>Share Episode</h5></div>
+                            <div class="social_share d-flex flex-row align-items-center">
+                                <div class="btn_container">
+                                    <a href="#">
+                                        <div class="btn_base">
+                                            <img src="images/social_twitter.png" alt="">
+                                        </div>
+                                        <div class="btn_extra">
+                                            <img src="images/social_twitter.png" alt="">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="btn_container">
+                                    <a href="#">
+                                        <div class="btn_base">
+                                            <img src="images/social_facebook.png" alt="">
+                                        </div>
+                                        <div class="btn_extra">
+                                            <img src="images/social_facebook.png" alt="">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="btn_container">
+                                    <a href="#">
+                                        <div class="btn_base">
+                                            <img src="images/social_instagram.png" alt="">
+                                        </div>
+                                        <div class="btn_extra">
+                                            <img src="images/social_instagram.png" alt="">
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sidebar_section sidebar_episode_info">
+                            <ul>
+                                <li>
+                                    <div>Host</div>
+                                    <div>Alex Chan</div>
+                                </li>
+                                <li>
+                                    <div>Guest</div>
+                                    <div>Jeremy King</div>
+                                </li>
+                                <li>
+                                    <div>Duration</div>
+                                    <div>53 minutes</div>
+                                </li>
+                                <li>
+                                    <div>Release Date</div>
+                                    <div>June 04, 2023</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Content -->
+                <div class="col-lg-8 col-12 order-lg-2 order-1">
+                    <div class="tabs_section magic_fade_in">
+                        <div class="tabs d-flex flex-row align-items-start flex-wrap">
+                            <div class="tab active">About this podcast</div>
+                            <div class="tab">Transcript</div>
+                        </div>
+                        <div class="tab_panels">
+                            <div class="tab_panel active">
+                                <div class="tab_panel_content">
+                                    <div class="podcast_description">
+                                        <p>Welcome to "The Future of Tech: Predictions and Trends", a podcast episode that explores the cutting-edge developments and innovations that will shape the future of the technology industry.</p>
+                                        <p>In this episode, we'll be joined by leading experts in the tech field who will share their insights and predictions on what's in store for the future of technology. We'll be discussing the latest trends and advancements in artificial intelligence, robotics, quantum computing, 5G, and other groundbreaking technologies.</p>
+                                        <p>Our guests will share their thoughts on how these emerging technologies will change the way we work, communicate, and live our lives. We'll also explore the ethical considerations surrounding the development and deployment of new technologies, and what steps we can take to ensure that they are used for the greater good.</p>
+                                        <p>Whether you're a tech enthusiast or just curious about what the future holds, this episode is not to be missed. Join us as we explore the exciting world of tech and uncover the possibilities of what's to come. Podcast Pulse brings you the most impactful tech news and its consequences, from industry leaders to cutting-edge startups.</p>
+                                    </div>
+                                    <div class="podcast_guests">
+                                        <div class="page_section_title">Guests</div>
+                                        <div class="podcast_guests_container d-flex flex-row flex-wrap align-items-start justify-content-between">
+                                            <div class="g_card">
+                                                <div class="g_card_pic"><img src="images/team_2.jpg" alt="AI Generated Image"></div>
+                                                <div class="g_card_content d-flex flex-column align-items-center justify-content-center">
+                                                    <div class="g_card_title">Anna Cruz</div>
+                                                    <div class="g_card_subtitle">CEO of Company</div>
+                                                </div>
+                                            </div>
+                                            <div class="g_card">
+                                                <div class="g_card_pic"><img src="images/team_4.jpg" alt="AI Generated Image"></div>
+                                                <div class="g_card_content d-flex flex-column align-items-center justify-content-center">
+                                                    <div class="g_card_title">Sarah Willson</div>
+                                                    <div class="g_card_subtitle">CEO of Company</div>
+                                                </div>
+                                            </div>
+                                            <div class="g_card">
+                                                <div class="g_card_pic"><img src="images/team_7.jpg" alt="AI Generated Image"></div>
+                                                <div class="g_card_content d-flex flex-column align-items-center justify-content-center">
+                                                    <div class="g_card_title">Brian Smith</div>
+                                                    <div class="g_card_subtitle">CEO of Company</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="podcast_comments">
+                                        <div class="page_section_title">Comments</div>
+                                        <div class="comments_container">
+
+                                            <!-- Comment -->
+                                            <div class="comment">
+                                                <div class="comment_info d-flex flex-row align-items-center">
+                                                    <div class="comment_author_pic"><img src="images/comment_1.jpg" alt="https://unsplash.com/photos/l-gAsIxot0w"></div>
+                                                    <div class="comment_author">James Wright</div>
+                                                    <div class="comment_author_verify"><img src="images/verified_dark.png" alt=""></div>
+                                                    <div class="comment_post_time">47 min. ago</div>
+                                                </div>
+                                                <div class="comment_content">
+                                                    <p>A fascinating look into what's on the horizon for the tech industry. I can't wait to see how these predictions play out!</p>
+                                                </div>
+                                            </div>
+
+                                            <!-- Comment -->
+                                            <div class="comment">
+                                                <div class="comment_info d-flex flex-row align-items-center">
+                                                    <div class="comment_author_pic"><img src="images/comment_2.jpg" alt="https://unsplash.com/photos/XYY5KE1NH84"></div>
+                                                    <div class="comment_author">Alice Evans</div>
+                                                    <div class="comment_author_verify"><img src="images/verified_dark.png" alt=""></div>
+                                                    <div class="comment_post_time">12 min. ago</div>
+                                                </div>
+                                                <div class="comment_content">
+                                                    <p>A fascinating look into what's on the horizon for the tech industry. I can't wait to see how these predictions play out!</p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="post_comment_form_container d-flex flex-row align-items-center justify-content-between">
+                                            <div class="login_user_pic"><img src="images/comment_3.jpg" alt="https://unsplash.com/photos/LQIMXZaTIGQ"></div>
+                                            <form action="#" class="post_comment_form">
+                                                <input type="text" class="post_comment_input" placeholder="Add a comment, @ to mention...">
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab_panel">
+                                <div class="tab_panel_content transcript">
+                                    <p class="transcript_extra">[Opening Theme Music]</p>
+                                    <p class="transcript_timestamp">[00:00:08] <span><img src="images/play_white.png" alt=""></span></p>
+                                    <p><span>Alex Chan: </span>Welcome to another exciting episode of Podcast Pulse. I'm your host, Alex Chan, and today we have a special guest joining us. Please welcome Jeremy King, a renowned tech expert and futurist. Today, we'll be discussing "The Future of Tech: Predictions and Trends." Jeremy, it's a pleasure to have you here.</p>
+                                    <p class="transcript_timestamp">[00:00:22] <span><img src="images/play_white.png" alt=""></span></p>
+                                    <p><span>Jeremy King: </span>Thank you, Alex. It's great to be on the show.</p>
+                                    <p class="transcript_timestamp">[00:00:30] <span><img src="images/play_white.png" alt=""></span></p>
+                                    <p><span>Alex Chan: </span>Let's dive right in. What do you see as the biggest technological advancements that will shape the future?</p>
+                                    <p class="transcript_timestamp">[00:00:50] <span><img src="images/play_white.png" alt=""></span></p>
+                                    <p><span>Jeremy King: </span>One significant advancement that will have a profound impact is artificial intelligence (AI). AI is already transforming various industries, from healthcare to finance. We can expect AI to become even more sophisticated, enabling automation and enhanced decision-making capabilities. Additionally, the Internet of Things (IoT) will continue to expand, connecting our devices and enabling seamless communication between them.</p>
+                                    <p class="transcript_timestamp">[00:01:16] <span><img src="images/play_white.png" alt=""></span></p>
+                                    <p><span>Alex Chan: </span>Fascinating! How about the role of virtual reality (VR) and augmented reality (AR) in the future?</p>
+                                    <p class="transcript_timestamp">[00:01:40] <span><img src="images/play_white.png" alt=""></span></p>
+                                    <p><span>Jeremy King: </span>VR and AR are poised to revolutionize the way we interact with technology. With VR, we'll enter immersive digital worlds, providing incredible gaming and entertainment experiences. AR, on the other hand, overlays digital information onto the real world, opening up endless possibilities for education, training, and even enhancing our day-to-day lives.</p>
+                                    <p class="transcript_timestamp">[00:02:12] <span><img src="images/play_white.png" alt=""></span></p>
+                                    <p><span>Alex Chan: </span>That sounds incredible. With all these advancements, what are the potential challenges we might face?</p>
+                                    <p class="transcript_timestamp">[00:02:45] <span><img src="images/play_white.png" alt=""></span></p>
+                                    <p><span>Jeremy King: </span>One of the significant challenges will be ensuring privacy and security in this increasingly interconnected world. With the growing amount of data being generated, protecting personal information and preventing cyber threats will be crucial. Additionally, there may be concerns regarding the ethical implications of technologies like AI, requiring careful regulation and ethical frameworks.</p>
+                                    <p class="transcript_timestamp">[00:03:31] <span><img src="images/play_white.png" alt=""></span></p>
+                                    <p><span>Alex Chan: </span>Absolutely, those are critical considerations. Lastly, what advice do you have for individuals and businesses looking to stay ahead in this rapidly evolving tech landscape?</p>
+                                    <p class="transcript_timestamp">[00:04:07] <span><img src="images/play_white.png" alt=""></span></p>
+                                    <p><span>Jeremy King: </span>Continuous learning and adaptability are key. It's important to embrace lifelong learning and stay updated with the latest technological advancements. Networking and collaboration with other industry professionals can also provide valuable insights. Finally, fostering a culture of innovation within businesses will enable them to leverage emerging technologies and stay ahead of the curve.</p>
+                                    <p class="transcript_timestamp">[00:04:12] <span><img src="images/play_white.png" alt=""></span></p>
+                                    <p>[Closing Theme Music]</p>
+                                    <p class="transcript_timestamp">[00:05:02] <span><img src="images/play_white.png" alt=""></span></p>
+                                    <p><span>Alex Chan: </span>Thank you, Jeremy, for sharing your invaluable insights on "The Future of Tech: Predictions and Trends." It has been an enlightening conversation. And to our listeners, be sure to tune in next time for another exciting episode of Podcast Pulse.</p>
+                                    <p class="transcript_extra">[End of Transcript]</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer_outer">
+            <div class="footer_container d-flex flex-row align-items-center justify-content-center">
+                <div class="footer_content d-flex flex-row align-items-center justify-content-center">
+                    <div class="rights order-xs-1 order-3">© 2023 - Podcast Pulse - All Rights Reserved</div>
+                    <div class="footer_nav">
+
+                        <!-- Nav -->
+                        <div class="nav_container">
+                            <nav class="nav">
+                                <ul class="nav_content d-flex flex-row align-items-center justify-content-center">
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="about.html">About</a></li>
+                                    <li><a href="episodes.html">Episodes</a></li>
+                                    <li><a href="contact.html">Contact</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+
+                    </div>
+                    <div class="footer_social order-xs-3 order-1">
+
+                        <!-- Social -->
+                        <div class="social_list d-flex flex-row align-items-center">
+                            <div class="btn_container">
+                                <a href="#">
+                                    <div class="btn_base">
+                                        <img src="images/footer_social_twitter.png" alt="">
+                                    </div>
+                                    <div class="btn_extra">
+                                        <img src="images/footer_social_twitter.png" alt="">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="btn_container">
+                                <a href="#">
+                                    <div class="btn_base">
+                                        <img src="images/footer_social_instagram.png" alt="">
+                                    </div>
+                                    <div class="btn_extra">
+                                        <img src="images/footer_social_instagram.png" alt="">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="btn_container">
+                                <a href="#">
+                                    <div class="btn_base">
+                                        <img src="images/footer_social_be.png" alt="">
+                                    </div>
+                                    <div class="btn_extra">
+                                        <img src="images/footer_social_be.png" alt="">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="btn_container">
+                                <a href="#">
+                                    <div class="btn_base">
+                                        <img src="images/footer_social_drib.png" alt="">
+                                    </div>
+                                    <div class="btn_extra">
+                                        <img src="images/footer_social_drib.png" alt="">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+        </div>
+    </footer>
+
+</div>
+
+<script src="js/jquery-3.6.4.min.js"></script>
+<script src="styles/bootstrap-5.1.3/popper.js"></script>
+<script src="styles/bootstrap-5.1.3/bootstrap.min.js"></script>
+<script src="plugins/gsap/gsap.min.js"></script>
+<script src="plugins/gsap/TextPlugin.min.js"></script>
+<script src="plugins/gsap/ScrollTrigger.min.js"></script>
+<script src="plugins/scrollmagic/ScrollMagic.min.js"></script>
+<script src="plugins/scrollmagic/animation.gsap.min.js"></script>
+<script src="plugins/parallax-js-master/parallax.min.js"></script>
+<script src="plugins/anime/anime.min.js"></script>
+<script src="plugins/jPlayer/jquery.jplayer.js"></script>
+<script src="plugins/jPlayer/jplayer.playlist.min.js"></script>
+<script src="plugins/OwlCarousel2-2.3.4/owl.carousel.js"></script>
+<script src="plugins/swiper/swiper-bundle.min.js"></script>
+<script src="plugins/easing/easing.js"></script>
+<script src="js/episode_custom.js"></script>
+</body>
+</html>

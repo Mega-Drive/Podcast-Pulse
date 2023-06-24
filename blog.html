@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+<title>Blog</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="Podcast Pulse Project">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="stylesheet" type="text/css" href="styles/bootstrap-5.1.3/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="plugins/swiper/swiper-bundle.min.css">
+<link rel="stylesheet" type="text/css" href="styles/blog.css">
+<link rel="stylesheet" type="text/css" href="styles/blog_responsive.css">
+</head>
+<body>
+
+<div class="super_container">
+
+    <!-- MENU -->
+
+    <div class="menu">
+        <div class="close_container">
+            <div class="d-flex flex-column align-items-center justify-content-center">
+                <div class="close d-flex flex-column align-items-center justify-content-center"><img src="images/close.png" alt="Close (x) pic - photoshop"></div>
+            </div>
+        </div>
+        <div class="menu_inner">
+            <!-- Navigation -->
+            <div class="menu_nav_container">
+                <div class="menu_title">navigation</div>
+                <nav class="menu_nav">
+                    <ul class="nav_content d-flex flex-row align-items-center justify-content-start">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="episodes.html">Episodes</a></li>
+                        <li class="active"><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- Recent -->
+            <div class="menu_recent_container">
+                <div class="menu_title">latest episodes</div>
+                <div class="menu_recent_items">
+                    <!-- Episode -->
+                    <article class="menu_recent">
+                        <a href="episodes.html"></a>
+                        <div class="d-flex flex-row align-items-center">
+                            <div class="menu_recent_pic"><img src="images/episode_01.jpg" alt="AI Generated Image"></div>
+                            <div class="menu_recent_title"><h3>The Future of Tech</h3></div>
+                        </div>
+                    </article>
+                    <!-- Episode -->
+                    <article class="menu_recent">
+                        <a href="episodes.html"></a>
+                        <div class="d-flex flex-row align-items-center">
+                            <div class="menu_recent_pic"><img src="images/episode_02.jpg" alt="AI Generated Image"></div>
+                            <div class="menu_recent_title"><h3>Video Game Design</h3></div>
+                        </div>
+                    </article>
+                    <!-- Episode -->
+                    <article class="menu_recent">
+                        <a href="episodes.html"></a>
+                        <div class="d-flex flex-row align-items-center">
+                            <div class="menu_recent_pic"><img src="images/episode_03.jpg" alt="AI Generated Image"></div>
+                            <div class="menu_recent_title"><h3>Art of Public Speaking</h3></div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div> 
+    </div>
+
+    <!-- HEADER -->
+
+    <header class="header">
+        <div class="header_outer d-flex flex-row align-items-center justify-content-start">
+
+            <!-- Logo -->
+            <div class="header_logo_container_outer">
+                <div class="header_logo_container d-flex flex-row align-items-center justify-content-center">
+                    <div class="logo d-flex flex-row align-items-center">
+                        <a href="#"></a>
+                        <img src="images/logo.png" alt="Podcast Pulse logo.">
+                        <div>Podcast Pulse.</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="header_inner">
+                <div class="header_content d-flex flex-row align-items-center justify-content-center">
+
+                    <!-- Nav -->
+                    <div class="nav_container d-flex flex-row align-items-center justify-content-start">
+                        <nav class="nav">
+                            <ul class="nav_content d-flex flex-row align-items-center justify-content-start">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="episodes.html">Episodes</a></li>
+                                <li class="active"><a href="blog.html">Blog</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+
+            <div class="header_right_side">
+                <div class="d-flex flex-row align-items-center justify-content-sm-start justify-content-end">
+                    <!-- Donation -->
+                    <div class="donate">
+                        <div class="d-flex flex-row align-items-center justify-content-center">
+                            <img src="images/donate.png" alt="donate icon">
+                            <span>donate</span>
+                        </div> 
+                    </div>
+                    <!-- Notifications -->
+                    <div class="notifs">
+                        <div class="d-flex flex-row align-items-center justify-content-center">
+                            <img src="images/notif_bell.png" alt="bell icon for notifications">
+                            <span>5</span>
+                        </div> 
+                    </div>
+                    <!-- Search -->
+                    <div class="header_search d-flex flex-column align-items-center justify-content-center">
+                        <div class="btn_container">
+                            <div>
+                                <div class="btn_base d-flex flex-column align-items-center justify-content-center">
+                                    <img id="search_icon_base" src="images/search.png" alt="search icon">
+                                </div>
+                                <div class="btn_extra d-flex flex-column align-items-center justify-content-center">
+                                    <img id="search_icon_extra" src="images/search.png" alt="search icon">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Hamburger Menu -->
+                    <div class="burger_container d-flex flex-column align-items-center justify-content-center">
+                        <div class="burger d-flex flex-column align-items-center justify-content-around">
+                            <div></div><div></div><div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+    <!-- SEARCH -->
+    <div class="search_group_container">
+        <div class="search_form_container">
+            <form action="#" class="search_form">
+                <div class="search_icon d-flex flex-column align-items-center justify-content-center"><img src="images/search_2.png" alt="Search icon"></div>
+                <input type="text" placeholder="Start typing to search" class="search_input">
+            </form>
+            <div class="searches_container">
+                <div class="searches_title">Popular Searches</div>
+                <div class="searches_list">
+                    <ul>
+                        <li><a href="#">Podcast</a></li>
+                        <li><a href="#">Latest Episode</a></li>
+                        <li><a href="#">Tech</a></li>
+                        <li><a href="#">AI</a></li>
+                        <li><a href="#">Health</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- HOME -->
+	<div class="home d-flex flex-row align-items-center justify-content-center">
+        <div class="home_inner d-flex flex-row align-items-center justify-content-center">
+            <div class="logo_overlay">
+                <div>
+                    <div></div><div></div><div></div>
+                </div>
+            </div>
+            <div class="home_background">
+                <div class="background_image" style="background-image:url(images/hero_5.jpg)"></div>
+            </div>
+            <div class="home_container">
+                <div class="home_content">
+                    <div class="home_wave"><img src="images/waves.png" alt=""></div>
+                    <div class="breadcrumbs d-flex flex-row align-items-center">
+                        <div><a href="index.html">Home</a></div>
+                        <div>Blog</div>
+                    </div>
+                    <h1>Insights and Stories from the Podcast World</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Latest Posts -->
+
+    <div class="container latest_posts">
+        <div class="row">
+            <div class="col">
+                <div class="blog_section_title"><h3>Featured blog posts</h3></div>
+                <div class="latest_posts_container d-flex flex-row justify-content-between flex-wrap">
+
+                    <!-- Latest post - left, large -->
+                    <div class="latest_posts_left latest_posts_side">
+
+                        <!-- Card - large -->
+                        <div class="card_lg">
+                            <div class="card_lg_img">
+                                <div class="card_category"><a href="#">Technology</a></div>
+                                <img src="images/blog_1.jpg" alt="">
+                            </div>
+                            <div class="card_lg_content">
+                                <a href="blog_single.html"><h3>The Future of Podcasting</h3></a>
+                                <p>Podcasting continues to grow in popularity as a medium for content creation and consumption. In recent years, podcast listenership has increased dramatically...</p>
+                                <div class="card_info d-flex flex-row align-items-center">
+                                    <div class="card_info_pic"><img src="images/blog_author_1.jpg" alt=""></div>
+                                    <div class="card_info_text"><a href="#">Jenna King</a></div>
+                                    <div class="card_info_text">23 mins ago</div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Latest posts - right side, small -->
+                    <div class="latest_posts_right latest_posts_side">
+                        
+                        <!-- Card - Small -->
+                        <div class="card_sm d-flex flex-row justify-content-between">
+                            <div class="card_sm_img_container card_sm_half">
+                                <div class="card_sm_img"><img src="images/blog_2.jpg" alt=""></div>
+                            </div>
+                            <div class="card_sm_content card_sm_half">
+                                <a href="blog_single.html"><h3>Growing Your Podcast Audience</h3></a>
+                                <p>Growing your podcast audience is crucial for...</p>
+                                <div class="card_info d-flex flex-row align-items-center">
+                                    <div class="card_info_text"><a href="#">Jenna King</a></div>
+                                    <div class="card_info_text">23 mins ago</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card - Small -->
+                        <div class="card_sm d-flex flex-row justify-content-between">
+                            <div class="card_sm_img_container card_sm_half">
+                                <div class="card_sm_img"><img src="images/blog_3.jpg" alt=""></div>
+                            </div>
+                            <div class="card_sm_content card_sm_half">
+                                <a href="blog_single.html"><h3>Podcast Monetization Explained</h3></a>
+                                <p>Podcast creators now have more ways than ever to...</p>
+                                <div class="card_info d-flex flex-row align-items-center">
+                                    <div class="card_info_text"><a href="#">Jenna King</a></div>
+                                    <div class="card_info_text">23 mins ago</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card - Small -->
+                        <div class="card_sm d-flex flex-row justify-content-between">
+                            <div class="card_sm_img_container card_sm_half">
+                                <div class="card_sm_img"><img src="images/blog_4.jpg" alt=""></div>
+                            </div>
+                            <div class="card_sm_content card_sm_half">
+                                <a href="blog_single.html"><h3>Podcasting Equipment Basics</h3></a>
+                                <p>Having the right equipment is essential for producing...</p>
+                                <div class="card_info d-flex flex-row align-items-center">
+                                    <div class="card_info_text"><a href="#">Jenna King</a></div>
+                                    <div class="card_info_text">23 mins ago</div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- All posts -->
+
+    <div class="container section_container all_posts">
+        <div class="row">
+            <div class="col">
+                <div class="blog_section_title"><h3>All blog posts</h3></div>
+                <div class="categories_container swiper swiper-container swiper-free">
+                    <div class="categories swiper-wrapper">
+
+                        <!-- Category Button -->
+                        <div class="swiper-slide">
+                            <div class="category btn_container active" data-group="all">
+                                <div>
+                                    <div class="btn_base">
+                                        <span>All</span>
+                                    </div>
+                                    <div class="btn_extra">
+                                        <span>All</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Category Button -->
+                        <div class="swiper-slide" data-group="technology">
+                            <div class="category btn_container" data-group="technology">
+                                <div>
+                                    <div class="btn_base">
+                                        <span>Technology</span>
+                                    </div>
+                                    <div class="btn_extra">
+                                        <span>Technology</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+
+                        <!-- Category Button -->
+                        <div class="swiper-slide" data-group="gaming">
+                            <div class="category btn_container" data-group="gaming">
+                                <div>
+                                    <div class="btn_base">
+                                        <span>Gaming</span>
+                                    </div>
+                                    <div class="btn_extra">
+                                        <span>Gaming</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+
+                        <!-- Category Button -->
+                        <div class="swiper-slide">
+                            <div class="category btn_container" data-group="design">
+                                <div>
+                                    <div class="btn_base">
+                                        <span>Design</span>
+                                    </div>
+                                    <div class="btn_extra">
+                                        <span>Design</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Category Button -->
+                        <div class="swiper-slide">
+                            <div class="category btn_container" data-group="science">
+                                <div>
+                                    <div class="btn_base">
+                                        <span>Science</span>
+                                    </div>
+                                    <div class="btn_extra">
+                                        <span>Science</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+
+                    </div>
+                </div>
+
+                <!-- All posts -->
+                <div class="cards_md_container row" id="grid">
+
+                    <!-- Card - medium -->
+                    <div class="col-lg-4 col-md-6 col-12 grid_item" data-groups='["design"]'>
+                        <div class="card_md">
+                            <div class="card_md_img">
+                                <div class="card_category"><a href="#">Design</a></div>
+                                <img src="images/blog_5.jpg" alt="">
+                            </div>
+                            <div class="card_md_content">
+                                <a href="blog_single.html"><h3>Growing Your Podcast Audience: Tips and Tricks</h3></a>
+                                <p>Growing your podcast audience is crucial for success in the competitive world...</p>
+                                <div class="card_info d-flex flex-row align-items-center">
+                                    <div class="card_info_pic"><img src="images/blog_author_1.jpg" alt=""></div>
+                                    <div class="card_info_text"><a href="#">Jenna King</a></div>
+                                    <div class="card_info_text">55 mins ago</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card - medium -->
+                    <div class="col-lg-4 col-md-6 col-12 grid_item" data-groups='["technology"]'>
+                        <div class="card_md">
+                            <div class="card_md_img">
+                                <div class="card_category"><a href="#">Technology</a></div>
+                                <img src="images/blog_6.jpg" alt="">
+                            </div>
+                            <div class="card_md_content">
+                                <a href="blog_single.html"><h3>Tech Gadgets of Tomorrow: A Glimpse into the Future</h3></a>
+                                <p>Get a sneak peek into the cutting-edge technologies and gadgets that...</p>
+                                <div class="card_info d-flex flex-row align-items-center">
+                                    <div class="card_info_pic"><img src="images/blog_author_1.jpg" alt=""></div>
+                                    <div class="card_info_text"><a href="#">Jenna King</a></div>
+                                    <div class="card_info_text">2 hours ago</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card - medium -->
+                    <div class="col-lg-4 col-md-6 col-12 grid_item" data-groups='["gaming"]'>
+                        <div class="card_md">
+                            <div class="card_md_img">
+                                <div class="card_category"><a href="#">Gaming</a></div>
+                                <img src="images/blog_7.jpg" alt="">
+                            </div>
+                            <div class="card_md_content">
+                                <a href="blog_single.html"><h3>The Rise of AI: Shaping the Future of Technology</h3></a>
+                                <p>Explore how artificial intelligence is revolutionizing various industries, from...</p>
+                                <div class="card_info d-flex flex-row align-items-center">
+                                    <div class="card_info_pic"><img src="images/blog_author_1.jpg" alt=""></div>
+                                    <div class="card_info_text"><a href="#">Jenna King</a></div>
+                                    <div class="card_info_text">5 hours ago</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+
+                    <!-- Card - medium -->
+                    <div class="col-lg-4 col-md-6 col-12 grid_item" data-groups='["science"]'>
+                        <div class="card_md">
+                            <div class="card_md_img">
+                                <div class="card_category"><a href="#">Science</a></div>
+                                <img src="images/blog_8.jpg" alt="">
+                            </div>
+                            <div class="card_md_content">
+                                <a href="blog_single.html"><h3>Navigating the Digital Age: The Importance of Cybersecurity</h3></a>
+                                <p>Dive into the world of cybersecurity and explore the growing significance of...</p>
+                                <div class="card_info d-flex flex-row align-items-center">
+                                    <div class="card_info_pic"><img src="images/blog_author_1.jpg" alt=""></div>
+                                    <div class="card_info_text"><a href="#">Jenna King</a></div>
+                                    <div class="card_info_text">2 days ago</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card - medium -->
+                    <div class="col-lg-4 col-md-6 col-12 grid_item" data-groups='["design"]'>
+                        <div class="card_md">
+                            <div class="card_md_img">
+                                <div class="card_category"><a href="#">Design</a></div>
+                                <img src="images/blog_9.jpg" alt="">
+                            </div>
+                            <div class="card_md_content">
+                                <a href="blog_single.html"><h3>Exploring the Internet of Things: A Connected World</h3></a>
+                                <p> Delve into the fascinating world of the Internet of Things (IoT) and discover...</p>
+                                <div class="card_info d-flex flex-row align-items-center">
+                                    <div class="card_info_pic"><img src="images/blog_author_1.jpg" alt=""></div>
+                                    <div class="card_info_text"><a href="#">Jenna King</a></div>
+                                    <div class="card_info_text">7 days ago</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card - medium -->
+                    <div class="col-lg-4 col-md-6 col-12 grid_item" data-groups='["science"]'>
+                        <div class="card_md">
+                            <div class="card_md_img">
+                                <div class="card_category"><a href="#">Science</a></div>
+                                <img src="images/blog_10.jpg" alt="">
+                            </div>
+                            <div class="card_md_content">
+                                <a href="blog_single.html"><h3>The Impact of Big Data: Unleashing Insights and Innovation</h3></a>
+                                <p>Uncover the power of big data and analytics, as businesses leverage vast...</p>
+                                <div class="card_info d-flex flex-row align-items-center">
+                                    <div class="card_info_pic"><img src="images/blog_author_1.jpg" alt=""></div>
+                                    <div class="card_info_text"><a href="#">Jenna King</a></div>
+                                    <div class="card_info_text">12 days ago</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+
+                </div>
+
+                <div class="navigation d-flex flex-row align-items-center justify-content-between">
+                    <div class="nav_prev">
+                        <div class="btn_container btn_stroke nav_btn nav_btn_prev">
+                            <a class="d-flex flex-row align-items-center justify-content-center" href="#">
+                                <div class="btn_base">
+                                    <span><img src="images/arrow_prev.png" alt="">Prev</span>
+                                </div>
+                                <div class="btn_extra">
+                                    <span><img src="images/arrow_prev.png" alt="">Prev</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="pagination d-flex flex-row align-items-center">
+
+                        <!-- Button -->
+                        <div class="btn_container btn_stroke pagination_btn active">
+                            <a class="d-flex flex-row align-items-center justify-content-center" href="#">
+                                <div class="btn_base">
+                                    <span>1</span>
+                                </div>
+                                <div class="btn_extra">
+                                    <span>1</span>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- Button -->
+                        <div class="btn_container btn_stroke pagination_btn">
+                            <a class="d-flex flex-row align-items-center justify-content-center" href="#">
+                                <div class="btn_base">
+                                    <span>2</span>
+                                </div>
+                                <div class="btn_extra">
+                                    <span>2</span>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- Button -->
+                        <div class="btn_container btn_stroke pagination_btn">
+                            <a class="d-flex flex-row align-items-center justify-content-center" href="#">
+                                <div class="btn_base">
+                                    <span>3</span>
+                                </div>
+                                <div class="btn_extra">
+                                    <span>3</span>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+                    <div class="nav_next">
+                        <div class="btn_container btn_stroke nav_btn nav_btn_next">
+                            <a class="d-flex flex-row align-items-center justify-content-center" href="#">
+                                <div class="btn_base">
+                                    <span>Next<img src="images/arrow_next.png" alt=""></span>
+                                </div>
+                                <div class="btn_extra">
+                                    <span>Next<img src="images/arrow_next.png" alt=""></span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- CTA -->
+
+    <section class="cta1">
+        <div class="parallax_background parallax-window" data-parallax="scroll" data-image-src="images/cta_2.jpg" data-speed="0.8"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="cta1_content d-flex flex-column align-items-center justify-content-center">
+                        <div class="subscribe_content d-flex flex-column align-items-center justify-content-center">
+                            <div class="section_title d-flex flex-column align-items-center">
+                                <h2>Never Miss a <span>Podcast!<img id="bell_trigger" class="bell_icon" src="images/bell.png" alt="Bell icon for subscribe section"></span></h2>
+                                <p>Subscribe to be notified whenever a new episode is released and be the first to join discussions and expert insights.</p>
+                            </div>
+
+                            <div class="subscribe_form_container">
+                                <form action="#" class="subscribe_form d-flex flex-sm-row flex-column align-items-sm-start align-items-center justify-content-sm-between justify-content-start" id="subscribe_form">
+                                    <input type="email" class="subscribe_input" required="required" placeholder="Your e-mail">
+                                    <button class="subscribe_button button_fill">Subscribe</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+
+    <footer class="footer">
+        <div class="footer_outer">
+            <div class="footer_container d-flex flex-row align-items-center justify-content-center">
+                <div class="footer_content d-flex flex-row align-items-center justify-content-center">
+                    <div class="rights order-xs-1 order-3">© 2023 - Podcast Pulse - All Rights Reserved</div>
+                    <div class="footer_nav">
+
+                        <!-- Nav -->
+                        <div class="nav_container">
+                            <nav class="nav">
+                                <ul class="nav_content d-flex flex-row align-items-center justify-content-center">
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="about.html">About</a></li>
+                                    <li><a href="episodes.html">Episodes</a></li>
+                                    <li><a href="contact.html">Contact</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+
+                    </div>
+                    <div class="footer_social order-xs-3 order-1">
+
+                        <!-- Social -->
+                        <div class="social_list d-flex flex-row align-items-center">
+                            <div class="btn_container">
+                                <a href="#">
+                                    <div class="btn_base">
+                                        <img src="images/footer_social_twitter.png" alt="">
+                                    </div>
+                                    <div class="btn_extra">
+                                        <img src="images/footer_social_twitter.png" alt="">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="btn_container">
+                                <a href="#">
+                                    <div class="btn_base">
+                                        <img src="images/footer_social_instagram.png" alt="">
+                                    </div>
+                                    <div class="btn_extra">
+                                        <img src="images/footer_social_instagram.png" alt="">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="btn_container">
+                                <a href="#">
+                                    <div class="btn_base">
+                                        <img src="images/footer_social_be.png" alt="">
+                                    </div>
+                                    <div class="btn_extra">
+                                        <img src="images/footer_social_be.png" alt="">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="btn_container">
+                                <a href="#">
+                                    <div class="btn_base">
+                                        <img src="images/footer_social_drib.png" alt="">
+                                    </div>
+                                    <div class="btn_extra">
+                                        <img src="images/footer_social_drib.png" alt="">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+        </div>
+    </footer>
+
+</div>
+
+<script src="js/jquery-3.6.4.min.js"></script>
+<script src="styles/bootstrap-5.1.3/popper.js"></script>
+<script src="styles/bootstrap-5.1.3/bootstrap.min.js"></script>
+<script src="plugins/gsap/gsap.min.js"></script>
+<script src="plugins/gsap/TextPlugin.min.js"></script>
+<script src="plugins/gsap/ScrollTrigger.min.js"></script>
+<script src="plugins/scrollmagic/ScrollMagic.min.js"></script>
+<script src="plugins/scrollmagic/animation.gsap.min.js"></script>
+<script src="plugins/parallax-js-master/parallax.min.js"></script>
+<script src="plugins/anime/anime.min.js"></script>
+<script src="plugins/swiper/swiper-bundle.min.js"></script>
+<script src="plugins/shuffle/shuffle.min.js"></script>
+<script src="plugins/easing/easing.js"></script>
+<script src="js/blog_custom.js"></script>
+</body>
+</html>

@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+<title>Blog Post</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="Podcast Pulse Project">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="stylesheet" type="text/css" href="styles/bootstrap-5.1.3/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="plugins/swiper/swiper-bundle.min.css">
+<link rel="stylesheet" type="text/css" href="styles/blog_single.css">
+<link rel="stylesheet" type="text/css" href="styles/blog_single_responsive.css">
+</head>
+<body>
+
+<div class="super_container">
+
+    <!-- MENU -->
+
+    <div class="menu">
+        <div class="close_container">
+            <div class="d-flex flex-column align-items-center justify-content-center">
+                <div class="close d-flex flex-column align-items-center justify-content-center"><img src="images/close.png" alt="Close (x) pic - photoshop"></div>
+            </div>
+        </div>
+        <div class="menu_inner">
+            <!-- Navigation -->
+            <div class="menu_nav_container">
+                <div class="menu_title">navigation</div>
+                <nav class="menu_nav">
+                    <ul class="nav_content d-flex flex-row align-items-center justify-content-start">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="episodes.html">Episodes</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- Recent -->
+            <div class="menu_recent_container">
+                <div class="menu_title">latest episodes</div>
+                <div class="menu_recent_items">
+                    <!-- Episode -->
+                    <article class="menu_recent">
+                        <a href="episodes.html"></a>
+                        <div class="d-flex flex-row align-items-center">
+                            <div class="menu_recent_pic"><img src="images/episode_01.jpg" alt="AI Generated Image"></div>
+                            <div class="menu_recent_title"><h3>The Future of Tech</h3></div>
+                        </div>
+                    </article>
+                    <!-- Episode -->
+                    <article class="menu_recent">
+                        <a href="episodes.html"></a>
+                        <div class="d-flex flex-row align-items-center">
+                            <div class="menu_recent_pic"><img src="images/episode_02.jpg" alt="AI Generated Image"></div>
+                            <div class="menu_recent_title"><h3>Video Game Design</h3></div>
+                        </div>
+                    </article>
+                    <!-- Episode -->
+                    <article class="menu_recent">
+                        <a href="episodes.html"></a>
+                        <div class="d-flex flex-row align-items-center">
+                            <div class="menu_recent_pic"><img src="images/episode_03.jpg" alt="AI Generated Image"></div>
+                            <div class="menu_recent_title"><h3>Art of Public Speaking</h3></div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div> 
+    </div>
+
+    <!-- HEADER -->
+
+    <header class="header">
+        <div class="header_outer d-flex flex-row align-items-center justify-content-start">
+
+            <!-- Logo -->
+            <div class="header_logo_container_outer">
+                <div class="header_logo_container d-flex flex-row align-items-center justify-content-center">
+                    <div class="logo d-flex flex-row align-items-center">
+                        <a href="#"></a>
+                        <img src="images/logo.png" alt="Podcast Pulse logo.">
+                        <div>Podcast Pulse.</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="header_inner">
+                <div class="header_content d-flex flex-row align-items-center justify-content-center">
+
+                    <!-- Nav -->
+                    <div class="nav_container d-flex flex-row align-items-center justify-content-start">
+                        <nav class="nav">
+                            <ul class="nav_content d-flex flex-row align-items-center justify-content-start">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="episodes.html">Episodes</a></li>
+                                <li><a href="blog.html">Blog</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+
+            <div class="header_right_side">
+                <div class="d-flex flex-row align-items-center justify-content-sm-start justify-content-end">
+                    <!-- Donation -->
+                    <div class="donate">
+                        <div class="d-flex flex-row align-items-center justify-content-center">
+                            <img src="images/donate.png" alt="donate icon">
+                            <span>donate</span>
+                        </div> 
+                    </div>
+                    <!-- Notifications -->
+                    <div class="notifs">
+                        <div class="d-flex flex-row align-items-center justify-content-center">
+                            <img src="images/notif_bell.png" alt="bell icon for notifications">
+                            <span>5</span>
+                        </div> 
+                    </div>
+                    <!-- Search -->
+                    <div class="header_search d-flex flex-column align-items-center justify-content-center">
+                        <div class="btn_container">
+                            <div>
+                                <div class="btn_base d-flex flex-column align-items-center justify-content-center">
+                                    <img id="search_icon_base" src="images/search.png" alt="search icon">
+                                </div>
+                                <div class="btn_extra d-flex flex-column align-items-center justify-content-center">
+                                    <img id="search_icon_extra" src="images/search.png" alt="search icon">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Hamburger Menu -->
+                    <div class="burger_container d-flex flex-column align-items-center justify-content-center">
+                        <div class="burger d-flex flex-column align-items-center justify-content-around">
+                            <div></div><div></div><div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+    <!-- SEARCH -->
+    <div class="search_group_container">
+        <div class="search_form_container">
+            <form action="#" class="search_form">
+                <div class="search_icon d-flex flex-column align-items-center justify-content-center"><img src="images/search_2.png" alt="Search icon"></div>
+                <input type="text" placeholder="Start typing to search" class="search_input">
+            </form>
+            <div class="searches_container">
+                <div class="searches_title">Popular Searches</div>
+                <div class="searches_list">
+                    <ul>
+                        <li><a href="#">Podcast</a></li>
+                        <li><a href="#">Latest Episode</a></li>
+                        <li><a href="#">Tech</a></li>
+                        <li><a href="#">AI</a></li>
+                        <li><a href="#">Health</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- HOME -->
+	<div class="home d-flex flex-row align-items-center justify-content-center">
+        <div class="home_inner d-flex flex-row align-items-center justify-content-center">
+            <div class="logo_overlay">
+                <div>
+                    <div></div><div></div><div></div>
+                </div>
+            </div>
+            <div class="home_background">
+                <div class="background_image" style="background-image:url(images/hero_5.jpg)"></div>
+            </div>
+            <div class="home_container d-flex flex-row justify-content-center">
+                <div class="home_content d-flex flex-column align-items-center justify-content-center">
+                    <div class="home_wave"><img src="images/waves.png" alt=""></div>
+                    <div class="breadcrumbs d-flex flex-row align-items-center">
+                        <div><a href="index.html">Home</a></div>
+                        <div><a href="blog.html">Blog</a></div>
+                    </div>
+                    <h1>The Future of Podcasting: Predictions & Trends</h1>
+                    <div class="card_info d-flex flex-row align-items-center">
+                        <div class="card_info_text"><a href="#">Jenna King</a></div>
+                        <div class="card_info_text">23 mins ago</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Blog Post -->
+
+    <section class="blog_post_section">
+        <div class="container">
+            <div class="row">
+                <!-- Sidebar -->
+                <div class="col-md-2 col-0">
+                    <div id="pin1" class="sidebar d-flex flex-column align-items-center">
+                        <div id="trigger1" class="sidebar_trigger"></div>
+                        <div class="reply sidebar_btn d-flex flex-column align-items-center justify-content-center"><img src="images/reply.png" alt=""></div>
+                        <div class="bookmark sidebar_btn d-flex flex-column align-items-center justify-content-center"><img src="images/bookmark.png" alt=""></div>
+                        <div class="views">
+                            <div>1758</div>
+                            <p>Views</p>
+                        </div>
+                        <div class="social_vertical d-flex flex-column align-items-center">
+                            <div class="social_vertical_item d-flex flex-column align-items-center justify-content-center trans_200">
+                                <img src="images/social_twitter.png" alt="">
+                            </div>
+                            <div class="social_vertical_item d-flex flex-column align-items-center justify-content-center trans_200">
+                                <img src="images/social_facebook.png" alt="">
+                            </div>
+                            <div class="social_vertical_item d-flex flex-column align-items-center justify-content-center trans_200">
+                                <img src="images/social_instagram.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Main Content -->
+                <div class="col-md-8 col-12">
+                    <div class="blog_post_content">
+                        <p class="first_letter">Over the past decade, podcasting has grown from a niche medium to a mainstream form of entertainment and education. As the industry continues to evolve and innovate, it's worth taking a look at some of the trends that are shaping the future of podcasting.</p>
+                        <p>One of the <span>most significant trends in podcasting is the rise of niche podcasts</span>. As the industry has grown, audiences have become more selective about the content they consume. Niche podcasts cater to specific interests and hobbies, offering a deeper dive into topics that may not receive as much attention in traditional media. From true crime to tabletop gaming, there is a podcast for almost every interest imaginable.</p>
+                        <div class="blog_post_pics_container d-flex flex-row justify-content-between flex-wrap">
+                            <div class="blog_post_pics_tall"><img src="images/blog_pic_1.jpg" alt=""></div>
+                            <div class="blog_post_pics_tall d-flex flex-column justify-content-between">
+                                <div class="blog_post_pics_sm"><img src="images/blog_pic_2.jpg" alt=""></div>
+                                <div class="blog_post_pics_sm"><img src="images/blog_pic_3.jpg" alt=""></div>
+                            </div>
+                        </div>
+                        <h4 class="pics_float_fix">Interactive and live podcasting</h4>
+                        <p>Podcasting has traditionally been a pre-recorded medium, but that's changing. The rise of interactive and live podcasting is bringing a new level of engagement to the medium. Interactive podcasts allow listeners to participate in the show through social media, email, or other channels. Live podcasts take that engagement a step further by recording in front of a live audience, creating a shared experience that can't be replicated through pre-recorded shows.</p>
+                        <h4>Transcripts for accessability and SEO</h4>
+                        <p>As podcasts become more popular, accessibility is becoming an increasingly important issue. Many listeners are hard of hearing or deaf, making it difficult for them to consume audio-only content. Transcripts, which provide a written version of the podcast's audio, make podcasts more accessible to these audiences. Transcripts also have benefits for search engine optimization (SEO), allowing search engines to crawl and index the podcast's content, making it more discoverable to new audiences.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="blog_post_pic_lg"><img src="images/blog_pic_4.jpg" alt=""></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2 col-0"></div>
+                <div class="col-md-8 col-12">
+                    <div class="blog_post_content">
+                        <h4 class="pics_float_fix">Podcast Networks</h4>
+                        <p>As the industry continues to grow, podcast networks are becoming more prevalent. Podcast networks are <span>groups of podcasts</span> that are produced and distributed by the same company or organization. These networks offer a range of benefits to podcasters, including access to resources like production equipment, marketing, and ad sales. For listeners, networks provide a one-stop-shop for discovering new shows and accessing content from their favorite hosts.</p>
+                        <div class="blog_post_author d-flex flex-row align-items-center">
+                            <div class="blog_post_author_pic"><img src="images/blog_post_author.jpg" alt=""></div>
+                            <div class="blog_post_author_info">
+                                <div class="blog_post_author_title">Author</div>
+                                <div class="blog_post_author_name">Jenna King</div>
+                            </div>
+                        </div>
+                        <p>Jenna King is a freelance writer and podcast enthusiast based in Boston, Massachusetts. With a passion for all things audio, she loves exploring the latest trends and innovations in the podcasting world.</p>
+                        <div class="author_social">
+                            <div class="social_list d-flex flex-row align-items-center">
+                                <span>Follow Jenna King on</span>
+                                <div class="btn_container">
+                                    <a href="#">
+                                        <div class="btn_base">
+                                            <img src="images/social_twitter.png" alt="">
+                                        </div>
+                                        <div class="btn_extra">
+                                            <img src="images/social_twitter.png" alt="">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="btn_container">
+                                    <a href="#">
+                                        <div class="btn_base">
+                                            <img src="images/social_facebook.png" alt="">
+                                        </div>
+                                        <div class="btn_extra">
+                                            <img src="images/social_facebook.png" alt="">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="btn_container">
+                                    <a href="#">
+                                        <div class="btn_base">
+                                            <img src="images/social_instagram.png" alt="">
+                                        </div>
+                                        <div class="btn_extra">
+                                            <img src="images/social_instagram.png" alt="">
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Comments -->
+                        <div class="comments">
+                            <div class="page_section_title">Comments</div>
+                            <div class="comments_container">
+
+                                <!-- Comment -->
+                                <div class="comment">
+                                    <div class="comment_info d-flex flex-row align-items-center">
+                                        <div class="comment_author_pic"><img src="images/comment_1.jpg" alt="https://unsplash.com/photos/l-gAsIxot0w"></div>
+                                        <div class="comment_author">James Wright</div>
+                                        <div class="comment_author_verify"><img src="images/verified_dark.png" alt=""></div>
+                                        <div class="comment_post_time">47 min. ago</div>
+                                    </div>
+                                    <div class="comment_content">
+                                        <p>A fascinating look into what's on the horizon for the tech industry. I can't wait to see how these predictions play out!</p>
+                                    </div>
+                                </div>
+
+                                <!-- Comment -->
+                                <div class="comment">
+                                    <div class="comment_info d-flex flex-row align-items-center">
+                                        <div class="comment_author_pic"><img src="images/comment_2.jpg" alt="https://unsplash.com/photos/XYY5KE1NH84"></div>
+                                        <div class="comment_author">Alice Evans</div>
+                                        <div class="comment_author_verify"><img src="images/verified_dark.png" alt=""></div>
+                                        <div class="comment_post_time">12 min. ago</div>
+                                    </div>
+                                    <div class="comment_content">
+                                        <p>A fascinating look into what's on the horizon for the tech industry. I can't wait to see how these predictions play out!</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="post_comment_form_container d-flex flex-row align-items-center justify-content-between">
+                                <div class="login_user_pic"><img src="images/comment_3.jpg" alt="https://unsplash.com/photos/LQIMXZaTIGQ"></div>
+                                <form action="#" class="post_comment_form">
+                                    <input type="text" class="post_comment_input" placeholder="Add a comment, @ to mention...">
+                                </form>
+                            </div>
+                        </div>
+                        <!-- Post Navigation -->
+                        <div class="post_navigation d-flex flex-row justify-content-between">
+                            <!-- Prev -->
+                            <div class="post_nav post_nav_prev">
+                                <span>Prev Post</span>
+                                <div class="post_nav_container">
+                                    <div class="post_nav_pic"><a href="#"><img src="images/blog_2.jpg" alt=""></a></div>
+                                    <div class="post_nav_content d-flex flex-row align-items-center"><p>Growing your podcast audience</p></div>
+                                </div>
+                            </div>
+                            <!-- Next -->
+                            <div class="post_nav post_nav_next">
+                                <span>Next Post</span>
+                                <div class="post_nav_container">
+                                    <div class="post_nav_pic"><a href="#"><img src="images/blog_3.jpg" alt=""></a></div>
+                                    <div class="post_nav_content d-flex flex-row align-items-center"><p>Growing your podcast audience</p></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+
+    <footer class="footer">
+        <div class="footer_outer">
+            <div class="footer_container d-flex flex-row align-items-center justify-content-center">
+                <div class="footer_content d-flex flex-row align-items-center justify-content-center">
+                    <div class="rights order-xs-1 order-3">© 2023 - Podcast Pulse - All Rights Reserved</div>
+                    <div class="footer_nav">
+
+                        <!-- Nav -->
+                        <div class="nav_container">
+                            <nav class="nav">
+                                <ul class="nav_content d-flex flex-row align-items-center justify-content-center">
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="about.html">About</a></li>
+                                    <li><a href="episodes.html">Episodes</a></li>
+                                    <li><a href="contact.html">Contact</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+
+                    </div>
+                    <div class="footer_social order-xs-3 order-1">
+
+                        <!-- Social -->
+                        <div class="social_list d-flex flex-row align-items-center">
+                            <div class="btn_container">
+                                <a href="#">
+                                    <div class="btn_base">
+                                        <img src="images/footer_social_twitter.png" alt="">
+                                    </div>
+                                    <div class="btn_extra">
+                                        <img src="images/footer_social_twitter.png" alt="">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="btn_container">
+                                <a href="#">
+                                    <div class="btn_base">
+                                        <img src="images/footer_social_instagram.png" alt="">
+                                    </div>
+                                    <div class="btn_extra">
+                                        <img src="images/footer_social_instagram.png" alt="">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="btn_container">
+                                <a href="#">
+                                    <div class="btn_base">
+                                        <img src="images/footer_social_be.png" alt="">
+                                    </div>
+                                    <div class="btn_extra">
+                                        <img src="images/footer_social_be.png" alt="">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="btn_container">
+                                <a href="#">
+                                    <div class="btn_base">
+                                        <img src="images/footer_social_drib.png" alt="">
+                                    </div>
+                                    <div class="btn_extra">
+                                        <img src="images/footer_social_drib.png" alt="">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+        </div>
+    </footer>
+
+</div>
+
+<script src="js/jquery-3.6.4.min.js"></script>
+<script src="styles/bootstrap-5.1.3/popper.js"></script>
+<script src="styles/bootstrap-5.1.3/bootstrap.min.js"></script>
+<script src="plugins/gsap/gsap.min.js"></script>
+<script src="plugins/gsap/TextPlugin.min.js"></script>
+<script src="plugins/gsap/ScrollTrigger.min.js"></script>
+<script src="plugins/scrollmagic/ScrollMagic.min.js"></script>
+<script src="plugins/scrollmagic/animation.gsap.min.js"></script>
+<script src="plugins/parallax-js-master/parallax.min.js"></script>
+<script src="plugins/anime/anime.min.js"></script>
+<script src="plugins/swiper/swiper-bundle.min.js"></script>
+<script src="plugins/easing/easing.js"></script>
+<script src="js/blog_single_custom.js"></script>
+</body>
+</html>
